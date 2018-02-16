@@ -5,7 +5,7 @@ export default class Genres extends Component {
   constructor(props) {
     super(props);
 
-    this.state = { activeItem: 'home' };
+    this.state = { activeItem: 'Breaking news' };
     this.handleItemClick = this.handleItemClick.bind(this);
   }
 
@@ -18,7 +18,7 @@ export default class Genres extends Component {
 
     return (
       <Menu pointing secondary vertical>
-        <Menu.Item name="home" active={activeItem === "home"} onClick={this.handleItemClick} />
+        <Menu.Item name="Breaking news" active={activeItem === "Breaking news"} onClick={this.handleItemClick} />
         <Menu.Item name="messages" active={activeItem === "messages"} onClick={this.handleItemClick} />
         <Menu.Item name="friends" active={activeItem === "friends"} onClick={this.handleItemClick} />
       </Menu>
